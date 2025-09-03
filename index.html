@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <title>DevClub Store</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">DevClub Store</div>
+        <nav class="navegacao">
+            <ul>
+                <li>Home</li>
+                <li>Produtos</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="tech-circle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+        <div class="list">
+            <div class="item active">
+                <!-- esse active será ativado junto do js, onde o item que será mostrado na tela será somente o active -->
+                <div class="product-img">
+                    <img src="imgs/apple-watch.png" alt="Apple Watch">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Novo Lançamento</p>
+                    <p class="product-name">Apple Watch Series 10</p>
+                    <p class="product-description">O Apple Watch Series 10 combina design elegante com tecnologia
+                        avançada, trazendo tela maior, desempenho otimizado e novos recursos de saúde e bem-estar para
+                        acompanhar seu dia a dia com estilo e praticidade.</p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-img">
+                    <img src="imgs/air-pods.png" alt="Air Pods Max">
+                </div>
+                <div class="content">
+                    <p class="product-tag">O queridinho da marca</p>
+                    <p class="product-name">AirPods Max</p>
+                    <p class="product-description">Os AirPods Max oferecem áudio de alta fidelidade com cancelamento
+                        ativo de ruído, design sofisticado e conforto excepcional, proporcionando uma experiência sonora
+                        imersiva em qualquer momento.</p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-img">
+                    <img src="imgs/vision-pro.png" alt="Vision Pro">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Uma nova experiência</p>
+                    <p class="product-name">Apple Vision Pro</p>
+                    <p class="product-description">O Apple Vision Pro redefine a forma de interagir com tecnologia,
+                        unindo realidade aumentada e virtual em um dispositivo inovador, com design premium e
+                        experiências imersivas para trabalho e entretenimento.</p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="arrows">
+                <button class="left" id="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1" />
+                    </svg>
+                </button>
+                <button class="right" id="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="indicator">
+                <div class="numbers">01</div>
+                <div class="numbers">02</div>
+                <div class="numbers">03</div>
+                <div class="dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+.logo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #00f7ff;
+    text-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+}
+
+header nav ul {
+    display: flex;
+    gap: 48px;
+}
+
+header nav ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+}
+
+header nav ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00f7ff;
+}
+
+header nav ul li:hover::after {
+    width: 100%;
+    transition: width 0.3s ease;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    background-color: linear-gradient(135deg, #0f0f1e 0%, #1f1f3a 100%);
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 247, 255, 0.2) 0%, rgba(15, 15, 30, 0) 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(50px);
+    z-index: 1;
+    animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+        transform: translate(-50%, -50) scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50) scale(1.5);
+    }
+}
+
+.list {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.item {
+    position: absolute;
+    inset: 0;
+    /* inset atua como um universal para as posicoes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
+}
+
+.product-img {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    position: relative;
+    z-index: 2;
+}
+
+.product-img img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: drop-shadow(0 0 30px rgba(0, 247, 255, 0.3));
+}
+
+.content {
+    width: 45%;
+    padding-right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    flex-direction: column;
+    /* este e o parametro que ira setar toda a descricao, deste o titulo ate o final, um em cima do outro */
+}
+
+.product-tag {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #00f7ff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-family: "Orbitron", sans-serif;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
