@@ -129,3 +129,27 @@ header nav ul li:hover::after {
     line-height: 1.1;
     margin-bottom: 20px;
 }
+
+.product-description {
+    font-size: 1.1rem;
+    color: #b8b8d0;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.btn {
+    padding: 12px 10px;
+    background: linear-gradient(90deg, #00f7ff, #0066ff);
+    border-radius: 30px;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.4s; 
+}
+
+.btn:hover {
+    transform: scale(1.3);
+}
