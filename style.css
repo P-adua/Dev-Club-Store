@@ -81,10 +81,15 @@ header nav ul li:hover::after {
     justify-content: center;
     align-items: center;
     opacity: 0;
+
+/* ANIMACAO PAE */
+    transform: translate(100vw);
+    transition: transform 0.5s ease-in-out, opacity 0.7s ease-in-out;
 }
 
 .active {
     opacity: 1;
+    transform: translate(0);
 }
 
 .product-img {
@@ -101,6 +106,16 @@ header nav ul li:hover::after {
     max-width: 100%;
     max-height: 100%;
     filter: drop-shadow(0 0 30px rgba(0, 247, 255, 0.3));
+
+/* ANIMACAO */
+    transform: translateX(400px);
+    opacity: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.8s ease-in-out; 
+}
+
+.active .product-img img {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .content {
@@ -197,7 +212,7 @@ header nav ul li:hover::after {
     font-family: "Orbitron", sans-serif;
     font-size: 3rem;
     font-weight: 800;
-    color: rgba(255,255,255,0.2);
+    color: rgba(255, 255, 255, 0.2);
 }
 
 .dots {
@@ -208,7 +223,7 @@ header nav ul li:hover::after {
 .dot {
     width: 40px;
     height: 4px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 2px;
 }
 
